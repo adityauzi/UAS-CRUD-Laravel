@@ -59,3 +59,76 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# Aplikasi Kasir Laravel (UAS Pemrograman Web Lanjut)
+
+Ini adalah aplikasi kasir sederhana berbasis Laravel yang dibuat untuk memenuhi tugas UAS mata kuliah Pemrograman Web Lanjut di Universitas Islam Balitar.
+
+## 📌 Fitur Aplikasi
+
+- CRUD Transaksi (Create, Read, Update, Delete)
+- Auto-update stok produk saat transaksi dilakukan
+- Relasi produk dengan kategori (many-to-one)
+- Dropdown nama barang yang otomatis menampilkan harga, stok, dan kategori
+- Validasi stok barang sebelum transaksi
+- Desain responsif dengan Bootstrap 5
+- Routing RESTful menggunakan Laravel Resource Controller
+
+## 🧰 Teknologi yang Digunakan
+
+- Laravel 10
+- SQLite (Database)
+- Bootstrap 5 (Frontend)
+- Blade Template (View)
+- Laravel MVC
+
+## ⚙️ Cara Menjalankan
+
+1. **Clone repository ini**:
+   ```bash
+   git clone https://github.com/username/kasir-app.git
+   cd kasir-app
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   composer install
+   npm install && npm run dev
+   ```
+
+3. **Buat file database SQLite**:
+   ```bash
+   touch database/database.sqlite
+   ```
+
+4. **Copy file `.env.example` menjadi `.env` dan sesuaikan DB**:
+   ```env
+   DB_CONNECTION=sqlite
+   DB_DATABASE=database/database.sqlite
+   ```
+
+5. **Generate key & migrate database**:
+   ```bash
+   php artisan key:generate
+   php artisan migrate --seed
+   ```
+
+6. **Jalankan server**:
+   ```bash
+   php artisan serve
+   ```
+
+7. Buka browser: [http://localhost:8000](http://localhost:8000)
+
+## 👥 Anggota Kelompok
+
+> Muhamad Aditya Rizqi Fauzi (23104410079)
+> M. Naufal Citra Y. (23104410058)
+> Desi Widyawati (23104410090)
+> Annisa Kusuma Dewi (23104410100)
+
+
+## 📄 Lisensi
+
+Project ini dibuat untuk keperluan tugas UAS  Pemograman Web Lanjut.
+
